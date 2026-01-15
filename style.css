@@ -528,8 +528,10 @@ tbody td input:focus {
 }
 
 /* Hide date/time picker icons for a cleaner look */
-tbody td input::-webkit-calendar-picker-indicator {
-    display: none;
+tbody td input::-webkit-calendar-picker-indicator,
+tbody td input::-webkit-inner-spin-button,
+tbody td input::-webkit-clear-button {
+    display: none !important;
     -webkit-appearance: none;
 }
 
@@ -638,5 +640,4 @@ tbody td input::-webkit-calendar-picker-indicator {
     padding: 10px 30px;
     cursor: pointer;
     font-weight: 500;
-
 }
