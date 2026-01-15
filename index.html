@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indira College of Nursing | Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="brand-logo">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item"><i class="fa-solid fa-house"></i></a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-book"></i></a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-comment-dots"></i></a>
+                <a href="#" class="nav-item active"><i class="fa-solid fa-file-invoice"></i></a>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="user-avatar">
+                    <i class="fa-solid fa-circle-user"></i>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <div class="header-left">
+                    <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+                    <h1>INDIRA COLLEGE OF NURSING</h1>
+                </div>
+                <div class="header-right">
+                    <span class="current-date">Thursday, 15 January 2026</span>
+                    <div class="header-actions">
+                        <button class="icon-btn"><i class="fa-solid fa-bell"></i></button>
+                        <button class="icon-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Banner -->
+            <section class="banner">
+                <div class="banner-content">
+                    <div class="banner-text">
+                        <h2>Your complete education hub, simplified!</h2>
+                        <p>Access all your education-related information conveniently from one location.</p>
+                    </div>
+                    <div class="banner-image">
+                        <img src="assets/student-illustration.jpg" alt="Education Hub Illustration">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tabs -->
+            <nav class="tabs">
+                <a href="#" class="tab">Request</a>
+                <a href="#" class="tab active">Request Details</a>
+                <a href="#" class="tab">Hostel Request</a>
+            </nav>
+
+            <!-- Content Area -->
+            <section class="content-body">
+                <div class="section-header">
+                    <h3>Request Details</h3>
+                </div>
+
+                <!-- Filters -->
+                <div class="filter-bar">
+                    <div class="date-range">
+                        <div class="input-group">
+                            <label>From</label>
+                            <div class="date-input">
+                                <input type="text" value="05/01/2026">
+                                <i class="fa-solid fa-calendar-days"></i>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label>To</label>
+                            <div class="date-input">
+                                <input type="text" value="15/01/2026">
+                                <i class="fa-solid fa-calendar-days"></i>
+                            </div>
+                        </div>
+                        <button class="go-btn">Go</button>
+                    </div>
+                </div>
+
+                <!-- Column Order Toggle -->
+                <div class="column-order-container">
+                    <div class="column-order-header">
+                        <span>Column Order</span>
+                        <div class="header-icon">
+                            <i class="fa-solid fa-square-caret-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="column-selection-panel">
+                        <div class="selection-actions">
+                            <label class="select-all"><input type="checkbox" checked> Select All</label>
+                            <span class="remove-all">Remove All</span>
+                        </div>
+
+                        <div class="column-tags">
+                            Requisition No(1) Requisition Date(2) Requested Staff(3) Student Name(4) Mem Type(5) Request
+                            By(6) Request Mode(7) Exit Date(8) Exit Time(9) Entry Date(10) Entry Time(11) Approval
+                            Status(12) Approval Stage(13)
+                        </div>
+
+                        <div class="column-checkboxes">
+                            <div class="checkbox-col">
+                                <label><input type="checkbox" checked> <span>Requisition No</span></label>
+                                <label><input type="checkbox" checked> <span>Request By</span></label>
+                                <label><input type="checkbox" checked> <span>Entry Time</span></label>
+                            </div>
+                            <div class="checkbox-col">
+                                <label><input type="checkbox" checked> <span>Requisition Date</span></label>
+                                <label><input type="checkbox" checked> <span>Request Mode</span></label>
+                                <label><input type="checkbox" checked> <span>Approval Status</span></label>
+                            </div>
+                            <div class="checkbox-col">
+                                <label><input type="checkbox" checked> <span>Requested Staff</span></label>
+                                <label><input type="checkbox" checked> <span>Exit Date</span></label>
+                                <label><input type="checkbox" checked> <span>Approval Stage</span></label>
+                            </div>
+                            <div class="checkbox-col">
+                                <label><input type="checkbox" checked> <span>Student Name</span></label>
+                                <label><input type="checkbox" checked> <span>Exit Time</span></label>
+                            </div>
+                            <div class="checkbox-col">
+                                <label><input type="checkbox" checked> <span>Mem Type</span></label>
+                                <label><input type="checkbox" checked> <span>Entry Date</span></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Table -->
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>S.No</th>
+                                <th>Select</th>
+                                <th>Requisition No</th>
+                                <th>Requisition Date</th>
+                                <th>Requested Staff</th>
+                                <th>Student Name</th>
+                                <th>Member Type</th>
+                                <th>Request By</th>
+                                <th>Request Mode</th>
+                                <th>Exit Date</th>
+                                <th>Exit Time</th>
+                                <th>Entry Date</th>
+                                <th>Entry Time</th>
+                                <th>Approval Status</th>
+                                <th>Appro Stage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><input type="checkbox"></td>
+                                <td><input type="text" value="RC10"></td>
+                                <td><input type="text" value="6/1/2026"></td>
+                                <td></td>
+                                <td><input type="text" value="BAVAN BALAJI G"></td>
+                                <td>Student</td>
+                                <td></td>
+                                <td></td>
+                                <td><input type="date" value="2026-06-01"></td>
+                                <td><input type="time" value="15:40"></td>
+                                <td><input type="date" value="2026-06-01"></td>
+                                <td><input type="time" value="17:00"></td>
+                                <td>Approved</td>
+                                <td>2</td>
+                            </tr>
+                            <tr class="even">
+                                <td>2</td>
+                                <td><input type="checkbox"></td>
+                                <td><input type="text" value="RC10"></td>
+                                <td><input type="text" value="8/1/2026"></td>
+                                <td></td>
+                                <td><input type="text" value="BAVAN BALAJI G"></td>
+                                <td>Student</td>
+                                <td></td>
+                                <td></td>
+                                <td><input type="date" value="2026-09-01"></td>
+                                <td><input type="time" value="06:50"></td>
+                                <td><input type="date" value="2026-12-01"></td>
+                                <td><input type="time" value="08:15"></td>
+                                <td>Approved</td>
+                                <td>2</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="actions-footer">
+                    <button class="delete-btn">Delete</button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast"
+        style="position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: #333; color: #fff; padding: 10px 20px; border-radius: 5px; display: none; z-index: 1000; font-size: 14px;">
+        Data saved successfully!
+    </div>
+
+    <script>
+        // Column Order Panel Toggle
+        const columnOrderHeader = document.querySelector('.column-order-header');
+        const selectionPanel = document.querySelector('.column-selection-panel');
+
+        function updateHeaderDate() {
+            const dateElement = document.querySelector('.current-date');
+            const now = new Date();
+            const options = { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' };
+            dateElement.textContent = now.toLocaleDateString('en-GB', options);
+        }
+
+        // Initial state: hidden
+        selectionPanel.style.display = 'none';
+
+        columnOrderHeader.addEventListener('click', () => {
+            const isHidden = selectionPanel.style.display === 'none';
+            selectionPanel.style.display = isHidden ? 'block' : 'none';
+
+            // Toggle icon rotation if needed
+            const icon = columnOrderHeader.querySelector('i');
+            if (isHidden) {
+                icon.classList.replace('fa-square-caret-down', 'fa-square-caret-up');
+            } else {
+                icon.classList.replace('fa-square-caret-up', 'fa-square-caret-down');
+            }
+        });
+
+        // Triple-click banner to save functionality
+        let bannerClickCount = 0;
+        let bannerClickTimer;
+        const banner = document.querySelector('.banner');
+
+        banner.addEventListener('click', () => {
+            bannerClickCount++;
+            clearTimeout(bannerClickTimer);
+
+            if (bannerClickCount === 3) {
+                saveData();
+                bannerClickCount = 0;
+            } else {
+                bannerClickTimer = setTimeout(() => {
+                    bannerClickCount = 0;
+                }, 500); // Reset count if clicks are too far apart
+            }
+        });
+
+        function saveData() {
+            const inputs = document.querySelectorAll('tbody input[type="date"], tbody input[type="time"], tbody input[type="text"]');
+            const data = Array.from(inputs).map(input => ({
+                id: input.closest('tr').querySelector('td:first-child').innerText,
+                type: input.getAttribute('type'),
+                value: input.value
+            }));
+
+            // Persist to localStorage
+            localStorage.setItem('nursing_portal_data', JSON.stringify(data));
+
+            // Show toast
+            const toast = document.getElementById('toast');
+            toast.style.display = 'block';
+            setTimeout(() => {
+                toast.style.display = 'none';
+            }, 3000);
+
+            console.log('Data saved:', data);
+        }
+
+        // Optional: Load saved data on page load
+        window.addEventListener('DOMContentLoaded', () => {
+            updateHeaderDate();
+            const savedData = localStorage.getItem('nursing_portal_data');
+            if (savedData) {
+                const data = JSON.parse(savedData);
+                const rows = document.querySelectorAll('tbody tr');
+                data.forEach(item => {
+                    const row = Array.from(rows).find(r => r.querySelector('td:first-child').innerText === item.id);
+                    if (row) {
+                        const input = row.querySelector(`input[type="${item.type}"]`);
+                        if (input) input.value = item.value;
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
