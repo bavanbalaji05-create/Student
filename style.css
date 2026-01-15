@@ -517,6 +517,9 @@ tbody td input[type="text"] {
     width: 100%;
     text-align: center;
     cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 tbody td input:focus {
@@ -635,4 +638,5 @@ tbody td input::-webkit-calendar-picker-indicator {
     padding: 10px 30px;
     cursor: pointer;
     font-weight: 500;
+
 }
